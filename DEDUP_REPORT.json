@@ -1,0 +1,719 @@
+{
+  "total_before": 741,
+  "removed_count": 41,
+  "total_after": 700,
+  "removed": [
+    {
+      "dir": "analyzing-threat-actor-ttps-with-mitre-attack",
+      "meta_name": "none",
+      "kept": "analyzing-campaign-attribution-evidence"
+    },
+    {
+      "dir": "auditing-kubernetes-rbac-permissions",
+      "meta_name": "none",
+      "kept": "analyzing-campaign-attribution-evidence"
+    },
+    {
+      "dir": "building-ioc-enrichment-pipeline-with-opencti",
+      "meta_name": "none",
+      "kept": "analyzing-campaign-attribution-evidence"
+    },
+    {
+      "dir": "building-threat-intelligence-platform",
+      "meta_name": "none",
+      "kept": "analyzing-campaign-attribution-evidence"
+    },
+    {
+      "dir": "collecting-threat-intelligence-with-misp",
+      "meta_name": "none",
+      "kept": "analyzing-campaign-attribution-evidence"
+    },
+    {
+      "dir": "configuring-active-directory-tiered-model",
+      "meta_name": "none",
+      "kept": "analyzing-campaign-attribution-evidence"
+    },
+    {
+      "dir": "configuring-ldap-security-hardening",
+      "meta_name": "none",
+      "kept": "analyzing-campaign-attribution-evidence"
+    },
+    {
+      "dir": "configuring-multi-factor-authentication-with-duo",
+      "meta_name": "none",
+      "kept": "analyzing-campaign-attribution-evidence"
+    },
+    {
+      "dir": "configuring-oauth2-authorization-flow",
+      "meta_name": "none",
+      "kept": "analyzing-campaign-attribution-evidence"
+    },
+    {
+      "dir": "detecting-container-escape-attempts",
+      "meta_name": "none",
+      "kept": "analyzing-campaign-attribution-evidence"
+    },
+    {
+      "dir": "exploiting-vulnerabilities-with-metasploit-framework",
+      "meta_name": "none",
+      "kept": "analyzing-campaign-attribution-evidence"
+    },
+    {
+      "dir": "hardening-docker-containers-for-production",
+      "meta_name": "none",
+      "kept": "analyzing-campaign-attribution-evidence"
+    },
+    {
+      "dir": "implementing-conditional-access-policies-azure-ad",
+      "meta_name": "none",
+      "kept": "analyzing-campaign-attribution-evidence"
+    },
+    {
+      "dir": "implementing-diamond-model-analysis",
+      "meta_name": "none",
+      "kept": "analyzing-campaign-attribution-evidence"
+    },
+    {
+      "dir": "implementing-identity-governance-with-sailpoint",
+      "meta_name": "none",
+      "kept": "analyzing-campaign-attribution-evidence"
+    },
+    {
+      "dir": "implementing-just-in-time-access-provisioning",
+      "meta_name": "none",
+      "kept": "analyzing-campaign-attribution-evidence"
+    },
+    {
+      "dir": "implementing-kubernetes-pod-security-standards",
+      "meta_name": "none",
+      "kept": "analyzing-campaign-attribution-evidence"
+    },
+    {
+      "dir": "implementing-network-policies-for-kubernetes",
+      "meta_name": "none",
+      "kept": "analyzing-campaign-attribution-evidence"
+    },
+    {
+      "dir": "implementing-pam-for-database-access",
+      "meta_name": "none",
+      "kept": "analyzing-campaign-attribution-evidence"
+    },
+    {
+      "dir": "implementing-passwordless-authentication-with-fido2",
+      "meta_name": "none",
+      "kept": "analyzing-campaign-attribution-evidence"
+    },
+    {
+      "dir": "implementing-patch-management-workflow",
+      "meta_name": "none",
+      "kept": "analyzing-campaign-attribution-evidence"
+    },
+    {
+      "dir": "implementing-privileged-access-management-with-cyberark",
+      "meta_name": "none",
+      "kept": "analyzing-campaign-attribution-evidence"
+    },
+    {
+      "dir": "implementing-rbac-for-kubernetes-cluster",
+      "meta_name": "none",
+      "kept": "analyzing-campaign-attribution-evidence"
+    },
+    {
+      "dir": "implementing-saml-sso-with-okta",
+      "meta_name": "none",
+      "kept": "analyzing-campaign-attribution-evidence"
+    },
+    {
+      "dir": "implementing-stix-taxii-feed-integration",
+      "meta_name": "none",
+      "kept": "analyzing-campaign-attribution-evidence"
+    },
+    {
+      "dir": "implementing-vulnerability-remediation-sla",
+      "meta_name": "none",
+      "kept": "analyzing-campaign-attribution-evidence"
+    },
+    {
+      "dir": "performing-access-review-and-certification",
+      "meta_name": "none",
+      "kept": "analyzing-campaign-attribution-evidence"
+    },
+    {
+      "dir": "performing-authenticated-vulnerability-scan",
+      "meta_name": "none",
+      "kept": "analyzing-campaign-attribution-evidence"
+    },
+    {
+      "dir": "performing-dark-web-monitoring-for-threats",
+      "meta_name": "none",
+      "kept": "analyzing-campaign-attribution-evidence"
+    },
+    {
+      "dir": "performing-docker-bench-security-assessment",
+      "meta_name": "none",
+      "kept": "analyzing-campaign-attribution-evidence"
+    },
+    {
+      "dir": "performing-indicator-lifecycle-management",
+      "meta_name": "none",
+      "kept": "analyzing-campaign-attribution-evidence"
+    },
+    {
+      "dir": "performing-kubernetes-penetration-testing",
+      "meta_name": "none",
+      "kept": "analyzing-campaign-attribution-evidence"
+    },
+    {
+      "dir": "performing-malware-ioc-extraction",
+      "meta_name": "none",
+      "kept": "analyzing-campaign-attribution-evidence"
+    },
+    {
+      "dir": "performing-privileged-account-discovery",
+      "meta_name": "none",
+      "kept": "analyzing-campaign-attribution-evidence"
+    },
+    {
+      "dir": "performing-service-account-audit",
+      "meta_name": "none",
+      "kept": "analyzing-campaign-attribution-evidence"
+    },
+    {
+      "dir": "performing-web-application-scanning-with-nikto",
+      "meta_name": "none",
+      "kept": "analyzing-campaign-attribution-evidence"
+    },
+    {
+      "dir": "prioritizing-vulnerabilities-with-cvss-scoring",
+      "meta_name": "none",
+      "kept": "analyzing-campaign-attribution-evidence"
+    },
+    {
+      "dir": "scanning-docker-images-with-trivy",
+      "meta_name": "none",
+      "kept": "analyzing-campaign-attribution-evidence"
+    },
+    {
+      "dir": "scanning-infrastructure-with-nessus",
+      "meta_name": "none",
+      "kept": "analyzing-campaign-attribution-evidence"
+    },
+    {
+      "dir": "securing-container-registry-with-harbor",
+      "meta_name": "none",
+      "kept": "analyzing-campaign-attribution-evidence"
+    },
+    {
+      "dir": "tracking-threat-actor-infrastructure",
+      "meta_name": "none",
+      "kept": "analyzing-campaign-attribution-evidence"
+    }
+  ],
+  "similar_flagged": [
+    {
+      "a": "analyzing-browser-forensics-with-hindsight",
+      "b": "ctf-forensics",
+      "reason": "substring"
+    },
+    {
+      "a": "analyzing-docker-container-forensics",
+      "b": "ctf-forensics",
+      "reason": "substring"
+    },
+    {
+      "a": "analyzing-golang-malware-with-ghidra",
+      "b": "ctf-malware",
+      "reason": "substring"
+    },
+    {
+      "a": "analyzing-indicators-of-compromise",
+      "b": "collecting-indicators-of-compromise",
+      "reason": "substring"
+    },
+    {
+      "a": "analyzing-linux-elf-malware",
+      "b": "ctf-malware",
+      "reason": "substring"
+    },
+    {
+      "a": "analyzing-macro-malware-in-office-documents",
+      "b": "ctf-malware",
+      "reason": "substring"
+    },
+    {
+      "a": "analyzing-malware-behavior-with-cuckoo-sandbox",
+      "b": "ctf-malware",
+      "reason": "substring"
+    },
+    {
+      "a": "analyzing-malware-family-relationships-with-malpedia",
+      "b": "ctf-malware",
+      "reason": "substring"
+    },
+    {
+      "a": "analyzing-malware-persistence-with-autoruns",
+      "b": "ctf-malware",
+      "reason": "substring"
+    },
+    {
+      "a": "analyzing-network-covert-channels-in-malware",
+      "b": "ctf-malware",
+      "reason": "substring"
+    },
+    {
+      "a": "analyzing-network-traffic-of-malware",
+      "b": "ctf-malware",
+      "reason": "substring"
+    },
+    {
+      "a": "analyzing-outlook-pst-for-email-forensics",
+      "b": "ctf-forensics",
+      "reason": "substring"
+    },
+    {
+      "a": "analyzing-packed-malware-with-upx-unpacker",
+      "b": "ctf-malware",
+      "reason": "substring"
+    },
+    {
+      "a": "analyzing-pdf-malware-with-pdfid",
+      "b": "ctf-malware",
+      "reason": "substring"
+    },
+    {
+      "a": "analyzing-supply-chain-malware-artifacts",
+      "b": "ctf-malware",
+      "reason": "substring"
+    },
+    {
+      "a": "auditing-cloud-with-cis-benchmarks",
+      "b": "cis-benchmarks",
+      "reason": "substring"
+    },
+    {
+      "a": "auditing-gcp-iam-permissions",
+      "b": "aws-iam",
+      "reason": "substring"
+    },
+    {
+      "a": "aws-aws-secrets-manager",
+      "b": "aws-secrets-manager",
+      "reason": "substring"
+    },
+    {
+      "a": "building-attack-pattern-library-from-cti-reports",
+      "b": "ghost-report",
+      "reason": "substring"
+    },
+    {
+      "a": "building-automated-malware-submission-pipeline",
+      "b": "ctf-malware",
+      "reason": "substring"
+    },
+    {
+      "a": "building-cloud-security-posture-management",
+      "b": "implementing-cloud-security-posture-management",
+      "reason": "normalized-match"
+    },
+    {
+      "a": "building-incident-response-dashboard",
+      "b": "incident-response",
+      "reason": "substring"
+    },
+    {
+      "a": "building-incident-response-playbook",
+      "b": "implementing-ot-incident-response-playbook",
+      "reason": "substring"
+    },
+    {
+      "a": "building-incident-response-playbook",
+      "b": "incident-response",
+      "reason": "substring"
+    },
+    {
+      "a": "building-malware-incident-communication-template",
+      "b": "ctf-malware",
+      "reason": "substring"
+    },
+    {
+      "a": "building-phishing-reporting-button-workflow",
+      "b": "ghost-report",
+      "reason": "substring"
+    },
+    {
+      "a": "building-threat-actor-profile-from-osint",
+      "b": "ctf-osint",
+      "reason": "substring"
+    },
+    {
+      "a": "building-threat-intelligence-platform",
+      "b": "evaluating-threat-intelligence-platforms",
+      "reason": "substring"
+    },
+    {
+      "a": "building-vulnerability-scanning-workflow",
+      "b": "vulnerability-scanning",
+      "reason": "substring"
+    },
+    {
+      "a": "conducting-cloud-incident-response",
+      "b": "incident-response",
+      "reason": "substring"
+    },
+    {
+      "a": "conducting-cloud-penetration-testing",
+      "b": "penetration-testing",
+      "reason": "substring"
+    },
+    {
+      "a": "conducting-cloud-penetration-testing",
+      "b": "performing-cloud-penetration-testing",
+      "reason": "substring"
+    },
+    {
+      "a": "conducting-external-reconnaissance-with-osint",
+      "b": "ctf-osint",
+      "reason": "substring"
+    },
+    {
+      "a": "conducting-malware-incident-response",
+      "b": "ctf-malware",
+      "reason": "substring"
+    },
+    {
+      "a": "conducting-malware-incident-response",
+      "b": "incident-response",
+      "reason": "substring"
+    },
+    {
+      "a": "conducting-memory-forensics-with-volatility",
+      "b": "ctf-forensics",
+      "reason": "substring"
+    },
+    {
+      "a": "conducting-phishing-incident-response",
+      "b": "incident-response",
+      "reason": "substring"
+    },
+    {
+      "a": "conducting-wireless-network-penetration-test",
+      "b": "performing-wireless-network-penetration-test",
+      "reason": "substring"
+    },
+    {
+      "a": "configuring-identity-aware-proxy-with-google-iap",
+      "b": "ghost-proxy",
+      "reason": "substring"
+    },
+    {
+      "a": "configuring-microsegmentation-for-zero-trust",
+      "b": "zero-trust",
+      "reason": "substring"
+    },
+    {
+      "a": "container-scanning",
+      "b": "implementing-aqua-security-for-container-scanning",
+      "reason": "substring"
+    },
+    {
+      "a": "ctf-forensics",
+      "b": "performing-cloud-forensics-investigation",
+      "reason": "substring"
+    },
+    {
+      "a": "ctf-forensics",
+      "b": "performing-disk-forensics-investigation",
+      "reason": "substring"
+    },
+    {
+      "a": "ctf-forensics",
+      "b": "performing-endpoint-forensics-investigation",
+      "reason": "substring"
+    },
+    {
+      "a": "ctf-forensics",
+      "b": "performing-linux-log-forensics-investigation",
+      "reason": "substring"
+    },
+    {
+      "a": "ctf-forensics",
+      "b": "performing-memory-forensics-with-volatility3",
+      "reason": "substring"
+    },
+    {
+      "a": "ctf-forensics",
+      "b": "performing-memory-forensics-with-volatility3-plugins",
+      "reason": "substring"
+    },
+    {
+      "a": "ctf-forensics",
+      "b": "performing-mobile-device-forensics-with-cellebrite",
+      "reason": "substring"
+    },
+    {
+      "a": "ctf-forensics",
+      "b": "performing-network-forensics-with-wireshark",
+      "reason": "substring"
+    },
+    {
+      "a": "ctf-forensics",
+      "b": "performing-sqlite-database-forensics",
+      "reason": "substring"
+    },
+    {
+      "a": "dependency-scanning",
+      "b": "performing-sca-dependency-scanning-with-snyk",
+      "reason": "substring"
+    },
+    {
+      "a": "deploying-cloudflare-access-for-zero-trust",
+      "b": "zero-trust",
+      "reason": "substring"
+    },
+    {
+      "a": "deploying-palo-alto-prisma-access-zero-trust",
+      "b": "zero-trust",
+      "reason": "substring"
+    },
+    {
+      "a": "deploying-tailscale-for-zero-trust-vpn",
+      "b": "zero-trust",
+      "reason": "substring"
+    },
+    {
+      "a": "detecting-business-email-compromise",
+      "b": "detecting-business-email-compromise-with-ai",
+      "reason": "substring"
+    },
+    {
+      "a": "detecting-credential-dumping-with-edr",
+      "b": "detecting-t1003-credential-dumping-with-edr",
+      "reason": "substring"
+    },
+    {
+      "a": "detecting-kerberoasting-attacks",
+      "b": "performing-kerberoasting-attack",
+      "reason": "substring"
+    },
+    {
+      "a": "executing-diamond-model-analysis",
+      "b": "implementing-diamond-model-analysis",
+      "reason": "normalized-match"
+    },
+    {
+      "a": "generating-threat-intelligence-reports",
+      "b": "ghost-report",
+      "reason": "substring"
+    },
+    {
+      "a": "graphql-security",
+      "b": "performing-graphql-security-assessment",
+      "reason": "substring"
+    },
+    {
+      "a": "hashicorp-vault",
+      "b": "implementing-hashicorp-vault-dynamic-secrets",
+      "reason": "substring"
+    },
+    {
+      "a": "implementing-aws-security-hub",
+      "b": "implementing-aws-security-hub-compliance",
+      "reason": "substring"
+    },
+    {
+      "a": "implementing-beyondcorp-zero-trust-access-model",
+      "b": "zero-trust",
+      "reason": "substring"
+    },
+    {
+      "a": "implementing-cisa-zero-trust-maturity-model",
+      "b": "zero-trust",
+      "reason": "substring"
+    },
+    {
+      "a": "implementing-device-posture-assessment-in-zero-trust",
+      "b": "zero-trust",
+      "reason": "substring"
+    },
+    {
+      "a": "implementing-identity-verification-for-zero-trust",
+      "b": "zero-trust",
+      "reason": "substring"
+    },
+    {
+      "a": "implementing-infrastructure-as-code-security-scanning",
+      "b": "security-scan",
+      "reason": "substring"
+    },
+    {
+      "a": "implementing-network-access-control",
+      "b": "implementing-network-access-control-with-cisco-ise",
+      "reason": "substring"
+    },
+    {
+      "a": "implementing-ot-incident-response-playbook",
+      "b": "incident-response",
+      "reason": "substring"
+    },
+    {
+      "a": "implementing-semgrep-for-custom-sast-rules",
+      "b": "semgrep",
+      "reason": "substring"
+    },
+    {
+      "a": "implementing-threat-modeling-with-mitre-attack",
+      "b": "threat-modeling",
+      "reason": "substring"
+    },
+    {
+      "a": "implementing-zero-trust-dns-with-nextdns",
+      "b": "zero-trust",
+      "reason": "substring"
+    },
+    {
+      "a": "implementing-zero-trust-for-saas-applications",
+      "b": "zero-trust",
+      "reason": "substring"
+    },
+    {
+      "a": "implementing-zero-trust-in-cloud",
+      "b": "zero-trust",
+      "reason": "substring"
+    },
+    {
+      "a": "implementing-zero-trust-network-access",
+      "b": "implementing-zero-trust-network-access-with-zscaler",
+      "reason": "substring"
+    },
+    {
+      "a": "implementing-zero-trust-network-access",
+      "b": "zero-trust",
+      "reason": "substring"
+    },
+    {
+      "a": "implementing-zero-trust-network-access-with-zscaler",
+      "b": "zero-trust",
+      "reason": "substring"
+    },
+    {
+      "a": "implementing-zero-trust-with-hashicorp-boundary",
+      "b": "zero-trust",
+      "reason": "substring"
+    },
+    {
+      "a": "incident-response",
+      "b": "performing-ransomware-incident-response",
+      "reason": "substring"
+    },
+    {
+      "a": "penetration-testing",
+      "b": "performing-cloud-penetration-testing",
+      "reason": "substring"
+    },
+    {
+      "a": "penetration-testing",
+      "b": "performing-cloud-penetration-testing-with-pacu",
+      "reason": "substring"
+    },
+    {
+      "a": "penetration-testing",
+      "b": "performing-kubernetes-penetration-testing",
+      "reason": "substring"
+    },
+    {
+      "a": "performing-agentless-vulnerability-scanning",
+      "b": "vulnerability-scanning",
+      "reason": "substring"
+    },
+    {
+      "a": "performing-aws-privilege-escalation-assessment",
+      "b": "performing-privilege-escalation-assessment",
+      "reason": "substring"
+    },
+    {
+      "a": "performing-cloud-penetration-testing",
+      "b": "performing-cloud-penetration-testing-with-pacu",
+      "reason": "substring"
+    },
+    {
+      "a": "performing-docker-bench-security-assessment",
+      "b": "security-assessment",
+      "reason": "substring"
+    },
+    {
+      "a": "performing-gcp-security-assessment-with-forseti",
+      "b": "security-assessment",
+      "reason": "substring"
+    },
+    {
+      "a": "performing-graphql-security-assessment",
+      "b": "security-assessment",
+      "reason": "substring"
+    },
+    {
+      "a": "performing-iot-security-assessment",
+      "b": "security-assessment",
+      "reason": "substring"
+    },
+    {
+      "a": "performing-kubernetes-etcd-security-assessment",
+      "b": "security-assessment",
+      "reason": "substring"
+    },
+    {
+      "a": "performing-memory-forensics-with-volatility3",
+      "b": "performing-memory-forensics-with-volatility3-plugins",
+      "reason": "substring"
+    },
+    {
+      "a": "performing-oil-gas-cybersecurity-assessment",
+      "b": "security-assessment",
+      "reason": "substring"
+    },
+    {
+      "a": "performing-ot-network-security-assessment",
+      "b": "security-assessment",
+      "reason": "substring"
+    },
+    {
+      "a": "performing-ot-vulnerability-scanning-safely",
+      "b": "vulnerability-scanning",
+      "reason": "substring"
+    },
+    {
+      "a": "performing-power-grid-cybersecurity-assessment",
+      "b": "security-assessment",
+      "reason": "substring"
+    },
+    {
+      "a": "performing-scada-hmi-security-assessment",
+      "b": "security-assessment",
+      "reason": "substring"
+    },
+    {
+      "a": "performing-threat-modeling-with-owasp-threat-dragon",
+      "b": "threat-modeling",
+      "reason": "substring"
+    },
+    {
+      "a": "performing-vulnerability-scanning-with-nessus",
+      "b": "vulnerability-scanning",
+      "reason": "substring"
+    },
+    {
+      "a": "performing-wireless-security-assessment-with-kismet",
+      "b": "security-assessment",
+      "reason": "substring"
+    },
+    {
+      "a": "testing-for-xss-vulnerabilities",
+      "b": "testing-for-xss-vulnerabilities-with-burpsuite",
+      "reason": "substring"
+    },
+    {
+      "a": "triaging-security-incident",
+      "b": "triaging-security-incident-with-ir-playbook",
+      "reason": "substring"
+    }
+  ]
+}
