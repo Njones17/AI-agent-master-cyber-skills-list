@@ -1,0 +1,26 @@
+# Engagement working directories (contain sensitive pentest data)
+engagement-*/
+evidence/
+
+# API keys / secrets that should never be committed
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+secrets.json
+credentials.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Claude Code local settings (machine-specific)
+.claude/settings.local.json
