@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "mitre-attack": {
+      "command": "mitre-attack-mcp",
+      "args": []
+    }
+  }
+}
