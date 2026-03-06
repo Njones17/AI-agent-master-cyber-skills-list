@@ -10,10 +10,10 @@ Follows the [agentskills.io](https://agentskills.io) open standard. Works with C
 
 ```bash
 # Claude Code
-/plugin marketplace add <your-github-username>/master-cyber-skills
+/plugin marketplace add Njones17/AI-agent-master-cyber-skills-list
 
 # Or clone directly
-git clone https://github.com/<your-github-username>/master-cyber-skills .skills/cybersecurity
+git clone https://github.com/Njones17/AI-agent-master-cyber-skills-list .skills/cybersecurity
 ```
 
 ---
