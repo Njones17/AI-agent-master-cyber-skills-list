@@ -1,16 +1,13 @@
 ---
 name: implementing-secret-scanning-with-gitleaks
-description: >
-  This skill covers implementing Gitleaks for detecting and preventing hardcoded secrets
-  in git repositories. It addresses configuring pre-commit hooks, CI/CD pipeline integration,
-  custom rule authoring for organization-specific secrets, baseline management for existing
-  repositories, and remediation workflows for exposed credentials.
-domain: cybersecurity
-subdomain: devsecops
-tags: [devsecops, cicd, secret-scanning, gitleaks, pre-commit, secure-sdlc]
-version: 1.0.0
-author: mahipal
+description: "Implement Gitleaks for detecting and preventing hardcoded secrets in git repositories by configuring pre-commit hooks, CI/CD pipeline integration, custom rule authoring for organization-specific secrets, baseline management for existing repositories, and remediation workflows for exposed credentials. Use when developers may commit API keys or tokens, when establishing pre-commit secret scanning gates, when scanning repository history for leaked credentials, or when setting up automated secret detection in CI/CD pipelines."
 license: MIT
+metadata:
+  domain: cybersecurity
+  subdomain: devsecops
+  tags: [devsecops, cicd, secret-scanning, gitleaks, pre-commit, secure-sdlc]
+  version: 1.0.0
+  author: mahipal
 ---
 
 # Implementing Secret Scanning with Gitleaks
@@ -24,13 +21,6 @@ license: MIT
 - When migrating from manual secret audits to automated continuous scanning
 
 **Do not use** for detecting secrets in running applications or memory (use runtime secret detection), for managing secrets after detection (use Vault or AWS Secrets Manager), or for scanning container images (use Trivy or Grype).
-
-## Prerequisites
-
-- Gitleaks v8.18+ installed via binary, Go install, or Docker
-- Pre-commit framework installed for local hook integration
-- Git repository with history to scan
-- CI/CD platform access (GitHub Actions, GitLab CI, or equivalent)
 
 ## Workflow
 
@@ -248,26 +238,6 @@ git filter-repo --replace-text /tmp/expressions.txt --force
 # 4. Add the secret pattern to .gitleaks.toml rules
 # 5. Update the baseline file to remove the resolved finding
 ```
-
-## Key Concepts
-
-| Term | Definition |
-|------|------------|
-| Secret | Any credential, token, key, or sensitive string that should not appear in source code |
-| Pre-commit Hook | Git hook that runs before a commit is created, blocking commits containing detected secrets |
-| Entropy | Measure of randomness in a string; high-entropy strings are more likely to be secrets |
-| Baseline | Snapshot of existing findings used to differentiate new secrets from pre-existing ones |
-| Allowlist | Configuration specifying paths, patterns, or commits to exclude from detection |
-| SARIF | Static Analysis Results Interchange Format for uploading findings to security dashboards |
-| git-filter-repo | Tool for rewriting git history to remove sensitive data from all commits |
-
-## Tools & Systems
-
-- **Gitleaks**: Open-source secret detection tool supporting pre-commit hooks, CI/CD, and historical scanning
-- **pre-commit**: Framework for managing and maintaining multi-language pre-commit hooks
-- **git-filter-repo**: History rewriting tool for removing secrets from git history
-- **TruffleHog**: Alternative secret scanner with verified secret detection capabilities
-- **GitHub Secret Scanning**: Native GitHub feature that detects secrets matching partner patterns
 
 ## Common Scenarios
 

@@ -1,17 +1,13 @@
 ---
 name: securing-github-actions-workflows
-description: >
-  This skill covers hardening GitHub Actions workflows against supply chain attacks,
-  credential theft, and privilege escalation. It addresses pinning actions to SHA digests,
-  minimizing GITHUB_TOKEN permissions, protecting secrets from exfiltration, preventing
-  script injection in workflow expressions, and implementing required reviewers for
-  workflow changes.
-domain: cybersecurity
-subdomain: devsecops
-tags: [devsecops, cicd, github-actions, supply-chain, workflow-security, secure-sdlc]
-version: 1.0.0
-author: mahipal
+description: "Harden GitHub Actions workflows against supply chain attacks, credential theft, and privilege escalation by pinning actions to SHA digests, minimizing GITHUB_TOKEN permissions, protecting secrets from exfiltration, preventing script injection in workflow expressions, and implementing required reviewers for workflow changes. Use when GitHub Actions is the CI/CD platform and workflows need security hardening, when auditing workflow permissions and secret handling, or when third-party actions pose supply chain risk."
 license: MIT
+metadata:
+  domain: cybersecurity
+  subdomain: devsecops
+  tags: [devsecops, cicd, github-actions, supply-chain, workflow-security, secure-sdlc]
+  version: 1.0.0
+  author: mahipal
 ---
 
 # Securing GitHub Actions Workflows
@@ -25,12 +21,6 @@ license: MIT
 - When third-party actions pose supply chain risk through mutable version tags
 
 **Do not use** for securing other CI/CD platforms (see platform-specific hardening guides), for application vulnerability scanning (use SAST/DAST), or for secret detection in code (use Gitleaks).
-
-## Prerequisites
-
-- GitHub repository with GitHub Actions enabled
-- GitHub organization admin access for organization-level settings
-- Understanding of GitHub Actions workflow syntax and events
 
 ## Workflow
 
@@ -175,26 +165,6 @@ jobs:
 #    - Read repository contents and packages permissions
 #    - Do NOT allow GitHub Actions to create and approve PRs
 ```
-
-## Key Concepts
-
-| Term | Definition |
-|------|------------|
-| SHA Pinning | Referencing GitHub Actions by their immutable commit SHA instead of mutable version tags |
-| Script Injection | Attack where untrusted input (PR title, branch name) is interpolated into shell commands |
-| GITHUB_TOKEN | Automatically generated token with configurable permissions scoped to the current repository |
-| pull_request_target | Dangerous event trigger that runs in the base repo context with full permissions on fork PRs |
-| Environment Protection | GitHub feature requiring manual approval before jobs accessing an environment can run |
-| CODEOWNERS | File defining required reviewers for specific paths including workflow files |
-| OIDC Federation | Using GitHub's OIDC token to authenticate to cloud providers without storing long-lived credentials |
-
-## Tools & Systems
-
-- **Dependabot**: Automated dependency updater that keeps pinned action SHAs current
-- **StepSecurity Harden Runner**: GitHub Action that monitors and restricts outbound network calls from workflows
-- **actionlint**: Linter for GitHub Actions workflow files that detects security issues
-- **allstar**: GitHub App by OpenSSF that enforces security policies on repositories
-- **scorecard**: OpenSSF tool that evaluates supply chain security practices including CI/CD
 
 ## Common Scenarios
 
