@@ -1,17 +1,13 @@
 ---
 name: implementing-secrets-management-with-vault
-description: >
-  This skill covers deploying HashiCorp Vault for centralized secrets management across
-  cloud environments, including dynamic secret generation for databases and cloud providers,
-  transit encryption, PKI certificate management, and Kubernetes integration. It addresses
-  eliminating hardcoded credentials from application code and CI/CD pipelines by implementing
-  short-lived, automatically rotated secrets.
-domain: cybersecurity
-subdomain: cloud-security
-tags: [hashicorp-vault, secrets-management, dynamic-secrets, credential-rotation, zero-trust]
-version: 1.0.0
-author: mahipal
+description: "Deploy HashiCorp Vault for centralized secrets management across cloud environments, including dynamic secret generation for databases and cloud providers, transit encryption, PKI certificate management, and Kubernetes integration. Eliminate hardcoded credentials from application code and CI/CD pipelines with short-lived, automatically rotated secrets. Use when migrating from static credentials to dynamic secrets, when Kubernetes workloads need secure database access, or when compliance requires centralized credential management with audit logging."
 license: MIT
+metadata:
+  domain: cybersecurity
+  subdomain: cloud-security
+  tags: [hashicorp-vault, secrets-management, dynamic-secrets, credential-rotation, zero-trust]
+  version: 1.0.0
+  author: mahipal
 ---
 
 # Implementing Secrets Management with Vault
@@ -25,13 +21,6 @@ license: MIT
 - When CI/CD pipelines contain hardcoded secrets that represent supply chain risk
 
 **Do not use** for AWS-only environments where AWS Secrets Manager suffices without multi-cloud requirements, for application-level encryption logic (though Vault Transit can help), or for identity federation (see managing-cloud-identity-with-okta).
-
-## Prerequisites
-
-- HashiCorp Vault server deployed in HA mode (Consul or Raft storage backend)
-- TLS certificates for Vault listener endpoints
-- Vault Enterprise license for namespaces, Sentinel policies, and replication (optional)
-- Kubernetes cluster with Vault Agent Injector or CSI provider for workload integration
 
 ## Workflow
 
@@ -82,7 +71,12 @@ vault audit enable file file_path=/var/log/vault/audit.log
 
 # Enable syslog audit for SIEM integration
 vault audit enable syslog tag="vault" facility="AUTH"
+
+# Verify Vault is initialized and unsealed
+vault status
 ```
+
+**Checkpoint**: Confirm `vault status` shows Initialized=true, Sealed=false, and HA mode active before configuring auth.
 
 ### Step 2: Configure Authentication Methods
 
@@ -114,6 +108,8 @@ vault write auth/kubernetes/config \
   token_reviewer_jwt=@/var/run/secrets/kubernetes.io/serviceaccount/token \
   kubernetes_ca_cert=@/var/run/secrets/kubernetes.io/serviceaccount/ca.crt
 ```
+
+**Checkpoint**: Verify each auth method with a test login (`vault login -method=oidc`, `vault write auth/approle/login role_id=... secret_id=...`) before proceeding.
 
 ### Step 3: Enable Dynamic Secret Engines
 
@@ -152,6 +148,8 @@ vault write aws/roles/deploy-role \
   policy_document=@deploy-policy.json \
   default_sts_ttl=3600
 ```
+
+**Checkpoint**: Verify dynamic credential generation with `vault read database/creds/readonly` — confirm credentials work against the database before deploying to applications.
 
 ### Step 4: Integrate with Kubernetes Workloads
 
@@ -253,27 +251,6 @@ vault policy write web-app-policy web-app-policy.hcl
 # Verify audit log captures all operations
 vault audit list -detailed
 ```
-
-## Key Concepts
-
-| Term | Definition |
-|------|------------|
-| Dynamic Secrets | Credentials generated on-demand with automatic expiration and revocation, eliminating long-lived static credentials |
-| Secret Engine | Vault component that stores, generates, or encrypts data; includes KV, database, AWS, PKI, and Transit engines |
-| Auto-Unseal | Cloud KMS-based mechanism that automatically unseals Vault nodes on restart without manual key entry |
-| AppRole | Machine-oriented authentication method using Role ID and Secret ID for application and CI/CD pipeline access |
-| Transit Engine | Encryption-as-a-service engine that handles cryptographic operations without exposing encryption keys to applications |
-| Lease | Time-bound credential with a TTL that Vault automatically revokes on expiration unless renewed |
-| Namespace | Vault Enterprise feature providing tenant isolation with separate auth, secrets, and policy management |
-| Response Wrapping | Technique that wraps secret responses in a single-use token to prevent man-in-the-middle exposure during delivery |
-
-## Tools & Systems
-
-- **HashiCorp Vault**: Core secrets management platform providing dynamic secrets, encryption, and identity-based access
-- **Vault Agent Injector**: Kubernetes mutating webhook that automatically injects Vault secrets into pod volumes via sidecar containers
-- **Vault CSI Provider**: Kubernetes CSI driver that mounts Vault secrets directly into pod volumes without sidecar containers
-- **consul-template**: Template rendering daemon that watches Vault secrets and re-renders configuration files when secrets change
-- **Vault Radar**: Secret scanning tool that detects hardcoded credentials in source code, CI/CD pipelines, and cloud configurations
 
 ## Common Scenarios
 
